@@ -1,0 +1,17 @@
+[
+    { "id": "1", "quote": "A jug fills drop by drop.", "by": "Buddha", "tags": "wise"},
+    { "id": "2", "quote": "You will not be punished for your anger, you will be punished by your anger.", "by": "Buddha", "tags": "wise"},
+    { "id": "3", "quote": "We can never obtain peace in the outer world until we make peace with ourselves", "by": "Dalai Lama", "tags": "wise"},
+    { "id": "4", "quote": "What is the sound of one hand clapping?", "by": "", "tags": "koan"},
+    {"id": "5", "quote": "If you're not having fun, you're not doing it right.", "by": "Bob Basso", "tags": ""},
+    {"id": "6", "quote": "In seeking happiness for others, you find it for yourself.", "by": "Unknown", "tags": ""},
+    {"id": "7", "quote": "Make your life a mission, not an intermission.", "by": "Arnold H. Glasgow", "tags": ""},
+    {"id": "8", "quote": "Serenity comes when you trade expectations for acceptance.", "by": "Unknown", "tags": ""},
+    {"id": "9", "quote": "Nurture your mind with great thoughts--to believe in the heroic makes heroes.", "by": "Benjamin Disraeli", "tags": ""},
+    {"id": "10", "quote": "Remember that sometimes not getting what you want is a wonderful stroke of luck.", "by":"Dalai Lama",  "tags": ""},
+    {"id": "11", "quote": "A friend is someone who understands your past, believes in your future, and accepts you just the way you are.", "by":"Unknown",  "tags": ""},
+    {"id": "12", "quote": "We must accept finite disappointment, but never lose infinite hope.", "by":"Martin Luther King Jr.",  "tags": ""},
+    {"id": "13", "quote": "The only reason for time is so that everything doesn't happen at once.", "by": "Albert Einstein", "tags":""},
+    {"id": "14", "quote": "Time is a construct we use to measure eternity.", "by": "Carolyn Bralley", "tags": ""}
+
+]

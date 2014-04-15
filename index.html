@@ -1,0 +1,97 @@
+<!doctype html> <!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en">
+	<!--<![endif]-->
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>QuotePhoto - See your photos in a new way</title>
+		<meta name="description" content="A photo/quote mashup application.">
+		<meta name="author" content="Augustin Bralley - Datacosmos">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="stylesheet" href="css/style.css?v=2">
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!-- The missing protocol means that it will match the current protocol, either http or https. If running locally, we use the local jQuery. -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+		<script src="js/libs/ember-0.9.8.1.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/state.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/x-handlebars" data-template-name="selected-photo">
+			{{#with content}}
+			{{#view QuotePhoto.SelectedPhotoView contentBinding="this" classNames="selectedPhotoItem"}}
+			<img id="selectedImage" {{bindAttr src="content.link"}}/>
+			{{/view}}
+			<!--<h1>{{title}}</h1>-->
+			{{/with}}
+		</script>
+		<script type="text/x-handlebars" data-template-name="controls">
+			{{#view QuotePhoto.ControlsView classNames="controls"}}
+
+			<h2>1) Photo</h2>
+			<div class="space">
+			<a href="#" {{action "newPhotoSet"}} class="btn">Get Random</a>
+			</div>
+			
+			<h2>2) Quote</h2>
+			<div class="space">
+			<a href="#" {{action "previousQuote"}} class="btn">&lt;</a>
+			<a href="#" {{action "nextQuote"}} class="btn">&gt;</a>
+			</div>
+
+			<h2>3) Adjust</h2>
+			<div class="space">
+			<h4>
+			<a href="#" {{action "increase"}} class="btn small">+</a>
+			<a href="#" {{action "decrease"}} class="btn small">-</a>
+			font
+			</h4>
+
+			<h4>
+			<a href="#" {{action "topIncrease"}} class="btn small">+</a>
+			<a href="#" {{action "topDecrease"}} class="btn small">-</a>
+			top
+			</h4>
+
+			<h4>
+			<a href="#" {{action "leftIncrease"}} class="btn small">+</a>
+			<a href="#" {{action "leftDecrease"}} class="btn small">-</a>
+			left
+			</h4>
+			</div>
+
+			{{/view}}
+		</script>
+		<script type="text/x-handlebars" data-template-name="photo-view-list">
+			{{#each content}}
+			{{#view QuotePhoto.ThumbnailPhotoView contentBinding="this" classNames="thumbnailItem"}}
+			<img {{bindAttr src="content.link"}} style="width: 100%; height: 100%;"/>
+			{{/view}}
+			{{/each}}
+		</script>
+		<script type="text/x-handlebars" data-template-name="quote">
+			{{#with content}}
+			<h2>{{quote}}</h2>
+			<!-- <h3>{{by}}</h3> -->
+			{{/with}}
+		</script>
+		<!--
+		<script type="text/x-handlebars" data-template-name="quotes-list">
+		{{#each content}}
+		<h2>{{quote}}</h2>
+		<h3>{{by}}</h3>
+		{{/each}}
+		</script>
+		-->
+	</head>
+	<body>
+		<div id="main"></div>
+	</body>
+</html>
