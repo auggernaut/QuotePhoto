@@ -1,0 +1,21 @@
+{
+  "name": "QuotePhoto",
+  "description": "Pulls random images from imgur, overlays a quote on the image.",
+  "version": "0.0.1",
+  "homepage": "http://www.auggernaut.com",
+  "author": {
+    "name": "Augustin bralley",
+    "url": "http://github.com/auggernaut"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/auggernaut/quotephoto"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "dependencies": {
+    "express": "*",
+    "gzippo": "*"
+  }
+}
