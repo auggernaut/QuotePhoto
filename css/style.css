@@ -75,7 +75,6 @@ button {  width: auto; overflow: visible; }
 
 body, select, input, textarea {  color: #444; }
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
-a, a:active, a:visited { color: #607890; }
 a:hover { color: #036; }
 
 /*
@@ -167,6 +166,7 @@ div.is-selected:after {
 
 .selectedPhoto {
 	float: left;
+    clear: left;
 	}
 
 .selectedPhoto h1 {
@@ -203,7 +203,7 @@ div.is-selected:after {
 	position: absolute;
 	z-index: 1000;
 	top: 175px;
-    left: 200px;
+    left: 100px;
     width: 550px;
 }
 
@@ -220,7 +220,7 @@ div.is-selected:after {
 }
 
 .controls {
-	float:left;
+	float:right;
 	margin-right: 10px
 }
 

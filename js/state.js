@@ -78,7 +78,7 @@ function loadPhotos() {
       var content = result.data.slice(offset - 7, offset);
 
       QuotePhoto.PhotoListController.set('content', content);
-      QuotePhoto.PhotoListController.set('selected', QuotePhoto.PhotoListController.get('content')[selected]);
+      //QuotePhoto.PhotoListController.set('selected', QuotePhoto.PhotoListController.get('content')[selected]);
     }
   });
 
